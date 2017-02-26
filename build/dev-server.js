@@ -47,8 +47,6 @@ Object.keys(proxyTable).forEach(function (context) {
 // handle fallback for HTML5 history API
 app.use(require('connect-history-api-fallback')())
 
-app.use('/data', express.static(path.join(__dirname, '../src/data')))
-
 // serve webpack bundle output
 app.use(devMiddleware)
 
@@ -58,7 +56,7 @@ app.use(hotMiddleware)
 
 // serve pure static assets
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
-app.use(staticPath, express.static('./static'))
+app.use(staticPath+'/static', express.static('./static'))
 
 app.post('/upload', (req, res) => {
   var form = new formidable.IncomingForm()

@@ -18,7 +18,7 @@ import form from './components/form'
 import icon from './components/iconfont'
 import input from './components/input'
 import inputNumber from './components/inputNumber'
-import {vCol, vRow} from './components/layout'
+import {vCol, vRow} from './components/grid'
 import menu from './components/menu'
 import navMenu from './components/menu/navMenu.vue'
 import modal from './components/modal'
@@ -46,9 +46,10 @@ import upload from './components/upload'
 import message from './components/message'
 import notification from './components/notification'
 import morePanel from './components/morePanel'
+import { layout, sider, header, content, footer } from './components/layout'
 import tooltip from './directive/tooltip'
 
-let compnents = {
+const compnents = {
     affix,
     alert,
     backTop,
@@ -111,6 +112,11 @@ let compnents = {
     message,
     notification,
     morePanel,
+    layout,
+    sider,
+    header,
+    content,
+    footer,
     tooltip
 };
 
