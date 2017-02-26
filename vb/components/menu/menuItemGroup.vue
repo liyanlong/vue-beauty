@@ -9,9 +9,9 @@
     </li>
 </template>
 
-<script>
+<script lang="babel">
     export default {
-        name:'vb-menu-item-group',
+        name:'MenuItemGroup',
         props: {
             title: String
         }

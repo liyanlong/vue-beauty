@@ -4,9 +4,9 @@
   </ul>
 </template>
 
-<script>
+<script lang="babel">
 export default {
-  name:'vb-menu',
+  name:'Menu',
   props: {
     mode: {
       type: String,

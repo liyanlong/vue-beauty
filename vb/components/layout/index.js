@@ -1,5 +1,8 @@
 import "./style/index.less"
-import row from './row'
-import col from './col'
+import layout from './layout.vue'
+import sider from './sider.vue'
+import header from './header.vue'
+import content from './content.vue'
+import footer from './footer.vue'
 
-export {col,row}
+export {layout, sider, header, content, footer}

@@ -1,11 +1,16 @@
 {
   "presets": [["latest",{"modules": false}],"stage-2"],
   "plugins": [
-    ["transform-runtime", {
+    ["transform-vue-jsx", "transform-runtime", {
       "helpers": false,
       "polyfill": true,
       "regenerator": true
     }]
   ],
-  "comments": false
+  "comments": false,
+  "env": {
+    "test": {
+      "plugins": [ "istanbul" ]
+    }
+  }
 }
